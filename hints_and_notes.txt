@@ -1,0 +1,8 @@
+In ~/.bashrc there are two commented out lines regarding jupyter and pyspark that can be uncommented to cause `pyspark` command to launch a jupyter notebook with pyspark 
+
+
+from pyspark import SparkContext
+sc = SparkContext.getOrCreate()
+
+Errors?
+ValueError: Cannot run multiple SparkContexts at once: Make sure you're running `sc = SparkContext.getOrCreate()`
